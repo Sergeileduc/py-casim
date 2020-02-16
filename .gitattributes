@@ -1,0 +1,3 @@
+*.html -linguist-detectable
+Makefile -linguist-detectable
+docs/Makefile  -linguist-detectable
