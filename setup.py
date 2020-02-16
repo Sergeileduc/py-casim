@@ -24,7 +24,7 @@ setup(
     author_email='sergei.leduc@gmail.com',
     url='https://github.com/Sergeileduc/py_casim',
     project_urls={
-        "Documentation": "https://py-casim.readthedocs.io//en/latest/",
+        "Documentation": "https://py-casim.readthedocs.io/en/latest/",
         "Issue tracker": "https://github.com/Sergeileduc/py_casim/issues",
     },
     python_requires='>=3.6',
