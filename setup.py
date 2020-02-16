@@ -22,6 +22,11 @@ test_requirements = ['pytest>=3', 'pytest-datadir>=1.3.1']
 setup(
     author="Sergeileduc",
     author_email='sergei.leduc@gmail.com',
+    url='https://github.com/Sergeileduc/py_casim',
+    project_urls={
+        "Documentation": "https://py-casim.readthedocs.io//en/latest/",
+        "Issue tracker": "https://github.com/Sergeileduc/py_casim/issues",
+    },
     python_requires='>=3.6',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -50,7 +55,6 @@ setup(
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/sergeileduc/py_casim',
     version='0.1.0',
     zip_safe=False,
 )
