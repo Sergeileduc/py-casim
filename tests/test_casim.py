@@ -9,7 +9,8 @@ from py_casim.casim import Casim
 
 @pytest.fixture(scope='function')
 def casim_inst(datadir):
-    """Instantiate a casim objetc with sample image.
+    """
+    Instantiate a casim objetc with sample image.
 
     See more at: http://doc.pytest.org/en/latest/fixture.html
     """
@@ -25,7 +26,7 @@ def test_get_link(casim_inst):
 
 
 def test_get_share(casim_inst):
-    """Test Casim.get_link()."""
+    """Test Casim.get_share()."""
     res = casim_inst.get_share_code(4)
     expected = ('[URL=https://www.casimages.com/i/200217113356178313.png.html]'  # noqa: E501
                 '[IMG]https://nsa40.casimages.com/img/2020/02/17/mini_200217113356178313.png[/IMG][/url]')  # noqa: E501

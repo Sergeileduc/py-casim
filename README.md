@@ -7,7 +7,6 @@
 
 Python package and cli to upload image on Casimages.
 
-
 ## In python project
 
 ```python
@@ -56,21 +55,19 @@ py_casim --size 640 my_image.jpg
 ```
 
 
-* Free software: MIT license
-* Documentation: https://py-casim.readthedocs.io.
+  * Free software: MIT license
+  * Documentation: https://py-casim.readthedocs.io.
 
 
-Features
---------
+### Features
 
-* upload image and get his url
-* python package (import) OR command line tool
+  * upload image and get his url
+  * python package (import) OR command line tool
 
-Credits
--------
+### Credits
 
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
-`Cookiecutter`: https://github.com/audreyr/cookiecutter
+`Cookiecutter`: <https://github.com/audreyr/cookiecutter>
 
-`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+`audreyr/cookiecutter-pypackage`: <https://github.com/audreyr/cookiecutter-pypackage>

@@ -22,7 +22,7 @@ from .casim import Casim
               5 Forum BBCode Big
               6 Source Link Thumbnail
               7 Source Link Big''')
-def main(filename, size, code, all):
+def app(filename, size, code, all):
     """\b
     Upload an image to Casimages, and get url back.
     Resizing is optionnal (125x125, 320x240, 640x480, etc...)
@@ -60,4 +60,4 @@ def main(filename, size, code, all):
 
 
 if __name__ == "__main__":
-    sys.exit(main())  # pragma: no cover  # pylint: disable=no-value-for-parameter  # noqa: E501
+    sys.exit(app())  # pragma: no cover  # pylint: disable=no-value-for-parameter  # noqa: E501

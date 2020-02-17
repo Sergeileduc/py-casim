@@ -10,8 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 class Casim():
-    """Upload image to Casimages and get share url/code.
-    """
+    """Upload image to Casimages and get share url/code."""
 
     # CASIMAGES
     _url = "https://www.casimages.com/"
@@ -31,6 +30,7 @@ class Casim():
               }
 
     def __init__(self, image, resize=None):
+        """Init Casim() object with image path, and optionnal resize value."""
         self.image = image
         self.resize = resize if str(resize) in self.resize_values else None
         self.image_id = None
@@ -88,13 +88,17 @@ class Casim():
             return get_all_shares(r.text)
 
     def get_link(self):
-        """Upload image and return share link (Big source link).
-        Perform same thing as get_share_code(index=7)"""
+        """
+        Upload image and return share link (Big source link).
+
+        Perform same thing as get_share_code(index=7).
+        """
         self._upload_image()
         return self._get_share(7)
 
     def get_share_code(self, index=0):
-        """Get share link/code.
+        """
+        Get share link/code.
 
         Keyword Arguments:
             index {int} -- index of wanted share link (default: {0})
@@ -113,7 +117,8 @@ class Casim():
         return self._get_share(index)
 
     def get_all(self):
-        """Return list of all links/code.
+        """
+        Get list of all links/code.
             Direct link (Mail & Messenger)
             Direct link (Forum, Blog, Site)
             HTML Code Thumbnail

@@ -16,8 +16,7 @@ def mini_bbcode():
 
 @pytest.fixture
 def response():
-    """Read html sample from resp.html file
-    """
+    """Read html sample from resp.html file."""
     # with open("tests/test_tools/resp.html", "r") as f:
     #     content = f.read_text()
     path = Path("tests/test_tools/resp.html")
@@ -28,6 +27,7 @@ def response():
 class MockResponse:
 
     def __init__(self, text, status_code):
+        """Fake requests response object."""
         self.text = text
         self.status_code = status_code
 
@@ -35,7 +35,6 @@ class MockResponse:
 @pytest.fixture(autouse=True)
 def mock_session(monkeypatch, response):
     """Requests.get() mocked to return {'mock_key':'mock_response'}."""
-
     image_id = "200217113356178313.png"
 
     def mock_get(*args, **kwargs):

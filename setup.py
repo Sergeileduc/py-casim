@@ -41,7 +41,7 @@ setup(
     description="Upload image",
     entry_points={
         'console_scripts': [
-            'py_casim=py_casim.cli:main',
+            'py_casim=py_casim.cli:app',
         ],
     },
     install_requires=requirements,

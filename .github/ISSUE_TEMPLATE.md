@@ -1,6 +1,6 @@
-* Python Casim version:
-* Python version:
-* Operating System:
+  * Python Casim version:
+  * Python version:
+  * Operating System:
 
 ### Description
 
