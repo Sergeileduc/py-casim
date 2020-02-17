@@ -9,8 +9,7 @@ from py_casim.tools import get_share, get_all_shares
 
 @pytest.fixture
 def response(datadir):
-    """Read html sample from resp.html file
-    """
+    """Read html sample from resp.html file."""
     contents = (datadir / 'resp.html').read_text()
     return contents
 

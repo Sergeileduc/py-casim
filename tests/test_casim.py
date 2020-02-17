@@ -9,8 +9,7 @@ from py_casim.casim import Casim
 
 @pytest.fixture(scope='function')
 def casim_inst(datadir):
-    """
-    Instantiate a casim objetc with sample image.
+    """Instantiate a casim objetc with sample image.
 
     See more at: http://doc.pytest.org/en/latest/fixture.html
     """

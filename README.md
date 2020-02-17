@@ -57,7 +57,6 @@ py_casim --size 640 my_image.jpg
 *   Free software: MIT license
 *   Documentation: <https://py-casim.readthedocs.io>.
 
-
 ### Features
 
 *   upload image and get his url

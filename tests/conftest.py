@@ -10,7 +10,7 @@ from py_casim.casim import Casim
 def mini_bbcode():
     """BBCODE share code."""
     bbcode = ('[URL=https://www.casimages.com/i/200217113356178313.png.html]'  # noqa: E501
-              '[IMG]https://nsa40.casimages.com/img/2020/02/17/mini_200217113356178313.png[/IMG][/url]')
+              '[IMG]https://nsa40.casimages.com/img/2020/02/17/mini_200217113356178313.png[/IMG][/url]')  # noqa: E501
     return bbcode
 
 
