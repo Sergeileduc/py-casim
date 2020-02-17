@@ -44,29 +44,28 @@ See the doc for details.
 
 ## From command line
 
-```
+```shell
 py_casim my_image.jpg
 ```
 
 or with options :
 
-```
+```shell
 py_casim --size 640 my_image.jpg
 ```
 
-
-  * Free software: MIT license
-  * Documentation: https://py-casim.readthedocs.io.
+*   Free software: MIT license
+*   Documentation: <https://py-casim.readthedocs.io>.
 
 
 ### Features
 
-  * upload image and get his url
-  * python package (import) OR command line tool
+*   upload image and get his url
+*   python package (import) OR command line tool
 
 ### Credits
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+This package was created with Cookiecutter and the `audreyr/cookiecutter-pypackage` project template.
 
 `Cookiecutter`: <https://github.com/audreyr/cookiecutter>
 
