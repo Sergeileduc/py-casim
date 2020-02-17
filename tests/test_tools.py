@@ -18,8 +18,8 @@ def response(datadir):
 def test_get_share(response):
     """Simple test for get_share()."""
     url_share = get_share(response, 7)
-    expected = ("https://nsa40.casimages.com/"
-                "img/2020/02/15/200215020248643961.png")
+    expected = ("https://nsa40.casimages.com/img/"
+                "2020/02/17/200217113356178313.png")
     assert url_share == expected
 
 

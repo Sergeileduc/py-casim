@@ -46,7 +46,6 @@ def main(filename, size, code, all):
     #     click.echo("No resize")
     c = Casim(filename, resize=size)
     if all:
-        click.echo(f"All url/codes")
         res = c.get_all()
         for r in res:
             click.echo(r)
