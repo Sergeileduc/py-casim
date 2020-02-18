@@ -45,14 +45,16 @@ See the doc for details.
 
 ## From command line
 
-```shell
-py_casim my_image.jpg
+```console
+foo@bar:~$ py_casim my_image.jpg
+https://nsa40.casimages.com/img/xxxxxxxxxxxxxxx.png
 ```
 
 or with options :
 
-```shell
-py_casim --size 640 my_image.jpg
+```console
+foo@bar:~$ py_casim --size 640 my_image.jpg
+https://nsa40.casimages.com/img/xxxxxxxxxxxxxxx.png
 ```
 
 *   Free software: MIT license

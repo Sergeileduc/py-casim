@@ -1,0 +1,8 @@
+-r requirements-test.txt
+
+bump2version>=0.5.11
+wheel>=0.33.6
+watchdog>=0.9.0
+Sphinx>=1.8.5
+m2r
+twine>=1.14.0

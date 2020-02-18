@@ -1,8 +1,7 @@
 """Pytest global fixtures and conf."""
 
-import pytest
-# import requests
 from pathlib import Path
+import pytest
 from requests import Session
 
 from py_casim.casim import Casim

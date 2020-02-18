@@ -27,7 +27,7 @@ class Casim():
         "Connection": "keep-alive",
         "Pragma": "no-cache",
         "X-Requested-With": "XMLHttpRequest"
-              }
+        }
 
     def __init__(self, image, resize=None):
         """Init Casim() object with image path, and optionnal resize value."""
@@ -48,8 +48,8 @@ class Casim():
             self.url_resize = (f"https://www.casimages.com/"
                                f"ajax/s_ano_resize.php?dim={self.resize}")
             self.session.get(self.url_resize)
-            logger.info(f'ask for resize with value {self.resize}'
-                        f'and url : {self.url_resize}')
+            logger.info('ask for resize with value %s and url : %s',
+                        self.resize, self.url_resize)
 
     def _upload_image(self):
         """Upload image and return id."""
@@ -59,15 +59,14 @@ class Casim():
                                   files=file_, headers=Casim._headers)
 
         self.image_id = r.text  # casimages share page ID
-        logger.info(f'upload is ok, image id is {self.image_id}')
+        logger.info('upload is ok, image id is %s', self.image_id)
         return self.image_id
 
     def _get_share(self, index=None):
-        """
-        Get share link/code.
+        """Get share link/code.
 
-        Keyword Arguments:
-            index {int} -- index of wanted share link (default: {None})
+        Args:
+            index (int, optional): sqdfsdf. Defaults to None.
             0 :     Direct link (Mail & Messenger)
             1 :     Direct link (Forum, Blog, Site)
             2 :     HTML Code Thumbnail
@@ -76,17 +75,14 @@ class Casim():
             5 :     Forum BBCode Big
             6 :     Source Link Thumbnail
             7 :     Source Link Big
-            None :  All of the above (list)
 
         Returns:
-            str (or list) -- image share url (or list of share urls)
+            str (or list): image share url (or list of share urls)
         """
         r = self.session.get(Casim._url_casi_share.format(self.image_id))
-        logger.info(f'get() on share page returns code : {r.status_code}')
-        if index:
-            return get_share(r.text, index)
-        else:
-            return get_all_shares(r.text)
+        logger.info('get() on share page returns code : %d', r.status_code)
+
+        return get_share(r.text, index) if index else get_all_shares(r.text)
 
     def get_link(self):
         """
@@ -98,11 +94,10 @@ class Casim():
         return self._get_share(7)
 
     def get_share_code(self, index=0):
-        """
-        Get share link/code.
+        """Get share link/code.
 
-        Keyword Arguments:
-            index {int} -- index of wanted share link (default: {0})
+        Args:
+            index (int, optional): Url/code choice. Defaults to 0.
             0 :     Direct link (Mail & Messenger)
             1 :     Direct link (Forum, Blog, Site)
             2 :     HTML Code Thumbnail
@@ -113,7 +108,7 @@ class Casim():
             7 :     Source Link Big
 
         Returns:
-            str -- image share url/code
+            str: image share url/code
         """
         self._upload_image()
         return self._get_share(index)
@@ -121,14 +116,14 @@ class Casim():
     def get_all(self):
         """Get list of all links/code.
 
-            Direct link (Mail & Messenger)
-            Direct link (Forum, Blog, Site)
-            HTML Code Thumbnail
-            HTML Code Big
-            Forum BBCode Thumbnail
-            Forum BBCode Big
-            Source Link Thumbnail
-            Source Link Big
+            * Direct link (Mail & Messenger)
+            * Direct link (Forum, Blog, Site)
+            * HTML Code Thumbnail
+            * HTML Code Big
+            * Forum BBCode Thumbnail
+            * Forum BBCode Big
+            * Source Link Thumbnail
+            * Source Link Big
 
         Returns:
             list -- all image share codes/links
