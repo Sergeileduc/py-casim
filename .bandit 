@@ -1,0 +1,3 @@
+[bandit]
+exclude: /.venv,/build,/dist,/docs
+skips: B101

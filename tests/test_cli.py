@@ -20,7 +20,7 @@ def test_cli_help(runner):
     """Test the CLI help command."""
     help_result = runner.invoke(cli.app, ['--help'])
     assert help_result.exit_code == 0
-    assert 'Show this message and exit.' in help_result.output  # noqa: E501
+    assert 'Show this message and exit.' in help_result.output
 
 
 def test_cli_size_opt(runner):
