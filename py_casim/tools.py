@@ -16,11 +16,11 @@ def _get_inputs(html):
 
 def get_share(html, index):
     """Get the share with given index.
-    
+
     Args:
         html (str): input html
         index (int): index of wanted result (0 to 7)
-    
+
     Returns:
         str: url or code to share image
     """
