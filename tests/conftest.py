@@ -1,3 +1,5 @@
+"""Pytest global fixtures and conf."""
+
 import pytest
 # import requests
 from pathlib import Path
@@ -25,6 +27,7 @@ def response():
 
 
 class MockResponse:
+    """Fake requests resonse."""
 
     def __init__(self, text, status_code):
         """Fake requests response object."""

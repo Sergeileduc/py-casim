@@ -3,16 +3,14 @@
 """Tests for `py_casim` package."""
 
 import pytest
-# import re
-
 from click.testing import CliRunner
 
-# from py_casim.casim import Casim
 from py_casim import cli
 
 
 @pytest.fixture(scope='module')
 def runner():
+    """Cli runner to be used in tests."""
     return CliRunner()
 
 
@@ -20,7 +18,7 @@ def test_cli_help(runner):
     """Test the CLI help command."""
     help_result = runner.invoke(cli.app, ['--help'])
     assert help_result.exit_code == 0
-    assert 'Show this message and exit.' in help_result.output  # noqa: E501
+    assert 'Show this message and exit.' in help_result.output
 
 
 def test_cli_size_opt(runner):
