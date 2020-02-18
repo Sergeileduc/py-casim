@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/Sergeileduc/py_casim.svg?branch=master)](https://travis-ci.org/Sergeileduc/py_casim)
 [![Documentation Status](https://readthedocs.org/projects/py-casim/badge/?version=latest)](https://py-casim.readthedocs.io/en/latest/?badge=latest)
 [![codecov](https://codecov.io/gh/Sergeileduc/py_casim/branch/master/graph/badge.svg)](https://codecov.io/gh/Sergeileduc/py_casim)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/de9d039dab414f2d82782bda6a8353fc)](https://app.codacy.com/manual/Sergeileduc/py_casim?utm_source=github.com&utm_medium=referral&utm_content=Sergeileduc/py_casim&utm_campaign=Badge_Grade_Dashboard)
 
 Python package and cli to upload image on Casimages.
 
