@@ -77,6 +77,7 @@ class Casim():
             6 :     Source Link Thumbnail
             7 :     Source Link Big
             None :  All of the above (list)
+
         Returns:
             str (or list) -- image share url (or list of share urls)
         """

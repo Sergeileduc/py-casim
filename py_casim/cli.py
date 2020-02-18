@@ -22,7 +22,7 @@ from .casim import Casim
               5 Forum BBCode Big
               6 Source Link Thumbnail
               7 Source Link Big''')
-def app(filename, size, code, all):  # pylint: disable=redefined-builtin
+def app(filename, size, code, all):  # pylint: disable=redefined-builtin  # noqa: D301,E501
     """
     Upload an image to Casimages, and get url back.
 
