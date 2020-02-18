@@ -10,7 +10,6 @@ logger = logging.getLogger(__name__)
 
 
 class Casim():
-
     """Upload image to Casimages and get share url/code."""
 
     # CASIMAGES
