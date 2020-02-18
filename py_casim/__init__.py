@@ -4,4 +4,6 @@ __author__ = """Sergeileduc"""
 __email__ = 'sergei.leduc@gmail.com'
 __version__ = '0.1.5'
 
-from .casim import Casim  # noqa: F401
+from .casim import Casim
+
+__all__ = ["Casim"]
