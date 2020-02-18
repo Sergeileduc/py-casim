@@ -43,6 +43,9 @@ class Casim():
         logger.info('casim created with image: "%s" and resize: %s',
                     self.image, self.resize)
 
+    def __repr__(self):
+        return f'Casim({self.image}, resize={self.resize})'
+
     def _set_resize(self):
         if self.resize:
             self.url_resize = (f"https://www.casimages.com/"
