@@ -22,9 +22,11 @@ from .casim import Casim
               5 Forum BBCode Big
               6 Source Link Thumbnail
               7 Source Link Big''')
-def app(filename, size, code, all):
-    """\b
+def app(filename, size, code, all):  # pylint: disable=redefined-builtin
+    """
     Upload an image to Casimages, and get url back.
+
+    \b
     Resizing is optionnal (125x125, 320x240, 640x480, etc...)
     Default returned url is the Source Link (Big).
     Use the option to get different url format, or use --all option.

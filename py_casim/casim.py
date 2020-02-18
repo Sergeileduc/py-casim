@@ -40,8 +40,8 @@ class Casim():
 
         self._set_resize()
 
-        logger.info(f'casim created with image: '
-                    f'"{self.image}" and resize: {self.resize}')
+        logger.info('casim created with image: "%s" and resize: %s',
+                    self.image, self.resize)
 
     def _set_resize(self):
         if self.resize:
@@ -63,7 +63,7 @@ class Casim():
         return self.image_id
 
     def _get_share(self, index=None):
-        """\b
+        """
         Get share link/code.
 
         Keyword Arguments:
@@ -110,6 +110,7 @@ class Casim():
             5 :     Forum BBCode Big
             6 :     Source Link Thumbnail
             7 :     Source Link Big
+
         Returns:
             str -- image share url/code
         """
@@ -117,8 +118,8 @@ class Casim():
         return self._get_share(index)
 
     def get_all(self):
-        """
-        Get list of all links/code.
+        """Get list of all links/code.
+
             Direct link (Mail & Messenger)
             Direct link (Forum, Blog, Site)
             HTML Code Thumbnail

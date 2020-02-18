@@ -3,16 +3,14 @@
 """Tests for `py_casim` package."""
 
 import pytest
-# import re
-
 from click.testing import CliRunner
 
-# from py_casim.casim import Casim
 from py_casim import cli
 
 
 @pytest.fixture(scope='module')
 def runner():
+    """Cli runner to be used in tests."""
     return CliRunner()
 
 
