@@ -2,6 +2,7 @@
 
 """Tests for `py_casim` package."""
 
+import re
 import pytest
 
 from py_casim.casim import Casim
@@ -15,6 +16,14 @@ def casim_inst(datadir):
     """
     image = (datadir / 'sample image.png')
     return Casim(image, resize=125)
+
+
+def test_repr(casim_inst):
+    """Test __repr__."""
+    print("coucou\n")
+    print(repr(casim_inst))
+    assert re.match(r"Casim(.*/test_casim/sample image.png, resize=125)",
+                    repr(casim_inst))
 
 
 def test_get_link(casim_inst):
