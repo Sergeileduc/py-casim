@@ -2,6 +2,9 @@ py_casim
 ========
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
-   py_casim
+.. autoclass:: py_casim.casim.Casim
+   :members:
+   :undoc-members:
+   :show-inheritance:
