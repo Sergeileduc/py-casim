@@ -47,14 +47,14 @@ See the doc for details.
 ## From command line
 
 ```console
-foo@bar:~$ py_casim my_image.jpg
+foo@bar:~$ py-casim my_image.jpg
 https://nsa40.casimages.com/img/xxxxxxxxxxxxxxx.png
 ```
 
 or with options :
 
 ```console
-foo@bar:~$ py_casim --size 640 my_image.jpg
+foo@bar:~$ py-casim --size 640 my_image.jpg
 https://nsa40.casimages.com/img/xxxxxxxxxxxxxxx.png
 ```
 

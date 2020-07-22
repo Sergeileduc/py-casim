@@ -24,10 +24,10 @@ with open('requirements_test.txt') as f:
 setup(
     author="Sergeileduc",
     author_email='sergei.leduc@gmail.com',
-    url='https://github.com/Sergeileduc/py_casim',
+    url='https://github.com/Sergeileduc/py-casim',
     project_urls={
         "Documentation": "https://py-casim.readthedocs.io/en/latest/",
-        "Issue tracker": "https://github.com/Sergeileduc/py_casim/issues",
+        "Issue tracker": "https://github.com/Sergeileduc/py-casim/issues",
     },
     python_requires='>=3.6',
     classifiers=[
@@ -43,7 +43,7 @@ setup(
     description="Upload image",
     entry_points={
         'console_scripts': [
-            'py_casim=py_casim.cli:app',
+            'py-casim=py_casim.cli:app',
         ],
     },
     install_requires=requirements,
@@ -51,8 +51,8 @@ setup(
     long_description=readme + '\n\n' + history,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    keywords='py_casim',
-    name='py_casim',
+    keywords='python casim',
+    name='py-casim',
     packages=find_packages(include=['py_casim', 'py_casim.*']),
     setup_requires=setup_requirements,
     test_suite='tests',

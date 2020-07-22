@@ -1,5 +1,8 @@
 # History
 
+## 0.2.1 (2020-07-22)
+*   Change repo name and CLI to use dash
+
 ## 0.2.0 (2020-02-28)
 
 *   Better Doc
