@@ -1,11 +1,11 @@
 # Python Casim
 
-[![PyPI](https://img.shields.io/pypi/v/py_casim.svg)](https://pypi.python.org/pypi/py_casim)
+[![PyPI](https://img.shields.io/pypi/v/py-casim.svg)](https://pypi.org/project/py-casim/)
 [![Build Status](https://travis-ci.org/Sergeileduc/py-casim.svg?branch=master)](https://travis-ci.org/Sergeileduc/py-casim)
 [![Documentation Status](https://readthedocs.org/projects/py-casim/badge/?version=latest)](https://py-casim.readthedocs.io/en/latest/?badge=latest)
 [![codecov](https://codecov.io/gh/Sergeileduc/py-casim/branch/master/graph/badge.svg)](https://codecov.io/gh/Sergeileduc/py-casim)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b5605e8e4f6c4cb3940986da48ba3d8d)](https://app.codacy.com/manual/Sergeileduc/py-casim?utm_source=github.com&utm_medium=referral&utm_content=Sergeileduc/py-casim&utm_campaign=Badge_Grade_Dashboard)
-[![Requirements Status](https://requires.io/github/Sergeileduc/py_casim/requirements.svg?branch=master)](https://requires.io/github/Sergeileduc/py_casim/requirements/?branch=master)
+[![Requirements Status](https://requires.io/github/Sergeileduc/py-casim/requirements.svg?branch=master)](https://requires.io/github/Sergeileduc/py-casim/requirements/?branch=master)
 
 Python package and cli to upload image on Casimages.
 
