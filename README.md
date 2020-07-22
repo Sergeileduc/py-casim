@@ -1,5 +1,6 @@
 # Python Casim
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b5605e8e4f6c4cb3940986da48ba3d8d)](https://app.codacy.com/manual/Sergeileduc/py-casim?utm_source=github.com&utm_medium=referral&utm_content=Sergeileduc/py-casim&utm_campaign=Badge_Grade_Dashboard)
 [![PyPI](https://img.shields.io/pypi/v/py_casim.svg)](https://pypi.python.org/pypi/py_casim)
 [![Build Status](https://travis-ci.org/Sergeileduc/py_casim.svg?branch=master)](https://travis-ci.org/Sergeileduc/py_casim)
 [![Documentation Status](https://readthedocs.org/projects/py-casim/badge/?version=latest)](https://py-casim.readthedocs.io/en/latest/?badge=latest)
