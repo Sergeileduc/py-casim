@@ -12,7 +12,7 @@ To install Python Casim, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install py_casim
+    $ pip install py-casim
 
 This is the preferred method to install Python Casim, as it will always install the most recent stable release.
 
@@ -32,7 +32,7 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/sergeileduc/py_casim
+    $ git clone git://github.com/sergeileduc/py-casim
 
 Or download the `tarball`_:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/sergeileduc/py_casim
-.. _tarball: https://github.com/sergeileduc/py_casim/tarball/master
+.. _Github repo: https://github.com/sergeileduc/py-casim
+.. _tarball: https://github.com/sergeileduc/py-casim/tarball/master
