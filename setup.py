@@ -17,7 +17,7 @@ with open('requirements.txt') as f:
 setup_requirements = ['pytest-runner', ]
 
 # test_requirements = ['pytest>=3', 'pytest-datadir>=1.3.1']
-with open('requirements_test.txt') as f:
+with open('requirements-test.txt') as f:
     test_requirements = f.read().splitlines()
 
 

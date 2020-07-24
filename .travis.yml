@@ -6,12 +6,12 @@ python:
 install: pip install -U tox-travis
 script: tox
 
-install: pip install -r requirements.txt -r requirements_test.txt
+install: pip install -r requirements.txt -r requirements-test.txt
 script: pytest  --cov-report term --cov=py_casim tests/
 after_success: codecov
 
 deploy:
-  install: pip install -r requirements_dev.txt
+  install: pip install -r requirements-dev.txt
   provider: pypi
   distributions: sdist bdist_wheel
   user: "__token__"
