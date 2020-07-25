@@ -1,3 +1,3 @@
 [bandit]
 exclude: /.venv,/build,/dist,/docs
-skips: B101,D213
+skips: B101,D203,D213
