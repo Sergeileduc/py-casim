@@ -6,6 +6,9 @@ Contents
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :hidden:
+
+   py_casim
 
    installation
    usage

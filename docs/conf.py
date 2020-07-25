@@ -38,8 +38,8 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.viewcode',
               'sphinx.ext.githubpages',
               'sphinx.ext.napoleon',
-              #   'recommonmark'
-              'm2r'
+              # 'recommonmark',
+              'm2r2'
               ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -90,6 +90,9 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
+# Do not sort autoclass by alphabetical order
+autodoc_member_order = 'bysource'
+
 
 # -- Options for HTML output -------------------------------------------
 
@@ -97,6 +100,7 @@ todo_include_todos = False
 # a list of builtin themes.
 #
 html_theme = 'alabaster'
+# html_theme = 'basic'
 # html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a
@@ -107,22 +111,24 @@ html_theme_options = {
     'description': 'python Casimages',
     'github_button': True,
     'github_user': 'Sergeileduc',
-    'github_repo': 'py_casim',
+    'github_repo': 'py-casim',
     'github_banner': False,
     'github_type': 'mark',
-    'github_count': False
+    'github_count': False,
+    'codecov_button': True,
+    'travis_button': True
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 
 # -- Options for HTMLHelp output ---------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'py_casimdoc'
+htmlhelp_basename = 'py-casimdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------
@@ -149,7 +155,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass
 # [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'py_casim.tex',
+    (master_doc, 'py-casim.tex',
      'Python Casim Documentation',
      'Sergeileduc', 'manual'),
 ]
@@ -160,7 +166,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'py_casim',
+    (master_doc, 'py-casim',
      'Python Casim Documentation',
      [author], 1)
 ]
@@ -172,10 +178,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'py_casim',
+    (master_doc, 'py-casim',
      'Python Casim Documentation',
      author,
-     'py_casim',
+     'py-casim',
      'One line description of project.',
      'Miscellaneous'),
 ]

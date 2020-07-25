@@ -16,6 +16,7 @@ class Casim():
     _url = "https://www.casimages.com/"
     _url_upload = "https://www.casimages.com/upload_ano_multi.php"
     _url_casi_share = "https://www.casimages.com/codes_ano_multi.php?img={}"
+    #: Valid resize values for resize keyword argument
     resize_values = ["100", "125", "320", "640", "800", "1024", "1280", "1600"]
 
     _headers = {
