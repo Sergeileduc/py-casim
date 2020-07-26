@@ -85,3 +85,6 @@ dist: clean ## builds source and wheel package
 
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
+
+install-dev: clean ## pip install -e (editable mode)
+	pip install -e .

@@ -1,9 +1,8 @@
 -r requirements-test.txt
+-r docs/requirements-doc.txt
 -r requirements.txt
 
 bump2version>=v1.0.0
 wheel>=0.33.6
 watchdog>=0.9.0
-Sphinx>=1.8.5
-m2r
 twine>=1.14.0
