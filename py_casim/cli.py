@@ -23,8 +23,7 @@ from .casim import Casim
               6 Source Link Thumbnail
               7 Source Link Big''')
 def app(filename, size, code, all):  # pylint: disable=redefined-builtin  # noqa: D301,E501
-    """
-    Upload an image to Casimages, and get url back.
+    """Upload an image to Casimages, and get url back.
 
     \b
     Resizing is optionnal (125x125, 320x240, 640x480, etc...)

@@ -89,8 +89,7 @@ class Casim():
         return get_share(r.text, index) if index else get_all_shares(r.text)
 
     def get_link(self):
-        """
-        Upload image and return share link (Big source link).
+        """Upload image and return share link (Big source link).
 
         Perform same thing as get_share_code(index=7).
         """
