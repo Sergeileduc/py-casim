@@ -67,6 +67,4 @@ def app(filename, size, code, all):  # pylint: disable=redefined-builtin  # noqa
 
 
 if __name__ == "__main__":
-    # print(click.get_current_context())
-    click.echo(click.get_current_context())
     sys.exit(app())  # pragma: no cover  # pylint: disable=no-value-for-parameter  # noqa: E501
