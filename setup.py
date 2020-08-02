@@ -27,7 +27,10 @@ setup(
     url='https://github.com/Sergeileduc/py-casim',
     project_urls={
         "Documentation": "https://py-casim.readthedocs.io/en/latest/",
+        "Changelog": "https://py-casim.readthedocs.io/en/latest/history.html",
+        "Source code": "https://github.com/Sergeileduc/py-casim",
         "Issue tracker": "https://github.com/Sergeileduc/py-casim/issues",
+        "CI": "https://travis-ci.org/github/Sergeileduc/py-casim",
     },
     python_requires='>=3.6',
     classifiers=[
