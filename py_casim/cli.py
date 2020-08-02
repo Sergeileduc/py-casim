@@ -1,10 +1,14 @@
 """Console script for py_casim."""
 import sys
 import click
+from click_help_colors import HelpColorsCommand
 from .casim import Casim
 
 
-@click.command()
+@click.command(cls=HelpColorsCommand,
+               help_headers_color='yellow',
+               help_options_color='green',
+               context_settings={'max_content_width': 100})
 @click.argument('filename', type=click.Path(exists=True))
 @click.option('-a', '--all', is_flag=True,
               help='Get all urls and codes (HTML/BBcode) back.')
@@ -14,6 +18,8 @@ from .casim import Casim
 @click.option('-c', '--code', type=click.IntRange(0, 7),
               default=None,
               help='''Choose desired url/code.
+
+              \b
               0 Direct link (Mail & Messenger)
               1 Direct link (Forum, Blog, Site)
               2 HTML Code Thumbnail
@@ -61,4 +67,6 @@ def app(filename, size, code, all):  # pylint: disable=redefined-builtin  # noqa
 
 
 if __name__ == "__main__":
+    # print(click.get_current_context())
+    click.echo(click.get_current_context())
     sys.exit(app())  # pragma: no cover  # pylint: disable=no-value-for-parameter  # noqa: E501
