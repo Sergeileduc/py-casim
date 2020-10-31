@@ -5,13 +5,20 @@
 import pytest
 from click.testing import CliRunner
 
-from py_casim import cli
+from py_casim import cli, __version__
 
 
 @pytest.fixture(scope='module')
 def runner():
     """Cli runner to be used in tests."""
     return CliRunner()
+
+
+def test_cli_version(runner):
+    """Test the CLI help command."""
+    version_result = runner.invoke(cli.app, ['--version'])
+    assert version_result.exit_code == 0
+    assert version_result.output == 'py-casim version ' + __version__ + '\n'
 
 
 def test_cli_help(runner):
