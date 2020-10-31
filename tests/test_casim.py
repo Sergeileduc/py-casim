@@ -20,8 +20,7 @@ def casim_inst(datadir):
 
 def test_repr(casim_inst):
     """Test __repr__."""
-    print(repr(casim_inst))
-    assert re.match(r"Casim(.*/test_casim/sample image.png, resize=125)",
+    assert re.match(r"Casim\((.*(/|\\)test_casim(/|\\)sample image\.png), resize=125\)",  # noqa: E501
                     repr(casim_inst))
 
 

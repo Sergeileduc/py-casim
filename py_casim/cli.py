@@ -7,6 +7,7 @@ from . import __version__
 
 
 def print_version(ctx, param, value):
+    """Function called when using --version."""
     if not value or ctx.resilient_parsing:
         return
     click.echo('py-casim version ' + __version__)
