@@ -20,7 +20,6 @@ def casim_inst(datadir):
 
 def test_repr(casim_inst):
     """Test __repr__."""
-    print("coucou\n")
     print(repr(casim_inst))
     assert re.match(r"Casim(.*/test_casim/sample image.png, resize=125)",
                     repr(casim_inst))

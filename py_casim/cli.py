@@ -62,7 +62,6 @@ def app(filename, size, code, all):  # pylint: disable=redefined-builtin  # noqa
     #     click.echo(f"Resizing with value : {size}")
     # else:
     #     click.echo("No resize")
-    click.echo(__version__)
     c = Casim(filename, resize=size)
     if all:
         res = c.get_all()
