@@ -3,12 +3,23 @@ import sys
 import click
 from click_help_colors import HelpColorsCommand
 from .casim import Casim
+from . import __version__
+
+
+def print_version(ctx, param, value):
+    if not value or ctx.resilient_parsing:
+        return
+    click.echo('py-casim version ' + __version__)
+    ctx.exit()
 
 
 @click.command(cls=HelpColorsCommand,
+               no_args_is_help=True,
                help_headers_color='yellow',
                help_options_color='green',
                context_settings={'max_content_width': 100})
+@click.option('--version', is_flag=True, callback=print_version,
+              expose_value=False, is_eager=True)
 @click.argument('filename', type=click.Path(exists=True))
 @click.option('-a', '--all', is_flag=True,
               help='Get all urls and codes (HTML/BBcode) back.')
@@ -51,6 +62,7 @@ def app(filename, size, code, all):  # pylint: disable=redefined-builtin  # noqa
     #     click.echo(f"Resizing with value : {size}")
     # else:
     #     click.echo("No resize")
+    click.echo(__version__)
     c = Casim(filename, resize=size)
     if all:
         res = c.get_all()
