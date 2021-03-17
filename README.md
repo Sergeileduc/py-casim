@@ -35,6 +35,7 @@ print(link)
 ```
 
 To get another url/code return :
+
 ```python
 from py_casim import Casim
 
