@@ -35,6 +35,7 @@ print(link)
 ```
 
 To get another url/code return :
+
 ```python
 from py_casim import Casim
 
@@ -59,13 +60,13 @@ foo@bar:~$ py-casim --size 640 my_image.jpg
 https://nsa40.casimages.com/img/xxxxxxxxxxxxxxx.png
 ```
 
-*   Free software: MIT license
-*   Documentation: <https://py-casim.readthedocs.io>.
+* Free software: MIT license
+* Documentation: <https://py-casim.readthedocs.io>.
 
 ### Features
 
-*   upload image and get his url
-*   python package (import) OR command line tool
+* upload image and get his url
+* python package (import) OR command line tool
 
 ### Credits
 
