@@ -16,7 +16,7 @@ def _get_inputs(html):
 
 def _get_inputs2(html):
     soup = get_soup(html)
-    return [i["value"] for i in soup.select("div.col-lg-6 > input.form-control")]
+    return [i["value"] for i in soup.select("div.col-lg-6 > input.form-control")]  # noqa: E501
 
 
 def get_share(html, index):
@@ -56,6 +56,7 @@ def get_all_shares_loggedin(html):
 
 
 def get_folder_id(html, name):
+    """Search folder by its name, and return his ID."""
     soup = get_soup(html)
     albs = soup.find_all('option', id='reptogo')
     for a in albs:
@@ -65,6 +66,7 @@ def get_folder_id(html, name):
 
 
 def get_image_id(html, name):
+    """Search image by its name and return ID."""
     soup = get_soup(html)
     res = soup.select_one("#draggable")
     if res:

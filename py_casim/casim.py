@@ -2,6 +2,7 @@
 
 import logging
 from pathlib import Path
+
 import requests
 
 from .tools import (get_all_shares, get_all_shares_loggedin, get_folder_id,
@@ -144,7 +145,7 @@ class CasimLogged():
     _url_login = "https://www.casimages.com/connexion"
     _url_resize = "https://www.casimages.com/ajax/m_photos_p_resize.php"
     _url_upload = "https://www.casimages.com/upload_mb_dz_img.php"
-    _url_casi_share = "https://www.casimages.com/ajax/m_photos_codes_img.php?codimg={}"  # noqa: E501
+    _url_casi_share = "https://www.casimages.com/ajax/m_photos_codes_img.php"  # noqa: E501
     _url_m_photos = "https://www.casimages.com/m_photos"
     _url_search = "https://www.casimages.com/m_rechercher"
     #: Valid resize values for resize keyword argument
@@ -204,12 +205,9 @@ class CasimLogged():
         self._set_resize()
         with open(self.image, 'rb') as f:
             file_ = {'Filedata': (self.image.name, f, 'image/jpg')}
-            r = self.session.post(CasimLogged._url_upload,
-                                  files=file_, headers=CasimLogged._headers)
-
-        self.image_id = r.text  # casimages share page ID
-        logger.info('upload is ok, image id is %s', self.image_id)
-        return self.image_id
+            self.session.post(CasimLogged._url_upload,
+                              files=file_, headers=CasimLogged._headers)
+        logger.info('upload is ok')
 
     def _get_share(self, index=None):
         """Get share link/code.
@@ -232,7 +230,8 @@ class CasimLogged():
         r = self.session.post(CasimLogged._url_search, params=payload)
         image_id = get_image_id(r.text, self.image.name)
         if image_id:
-            r = self.session.get(CasimLogged._url_casi_share.format(image_id))
+            params = {"coding": image_id}
+            r = self.session.get(CasimLogged._url_casi_share, params=params)
             return get_share_loggedin(r.text, index) if index else get_all_shares_loggedin(r.text)  # noqa: E501
 
     def get_link(self):

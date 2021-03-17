@@ -1,0 +1,1238 @@
+
+<!doctype html>
+<html class="fixed" lang="fr">
+	<head lang="fr">
+
+		<!-- Basic -->
+		<meta charset="ISO-8859-1">
+
+		<title>Moteur de recherche interne - casimages.com</title>
+		<meta name="keywords" content="Manager Casimages" />
+		<meta name="description" content="Rechercher des fichiers ou des images dans le gestionnaire">
+		<meta name="author" content="Casimages.com">
+		<meta name="Publisher" CONTENT="casimages" />
+		<meta name="Copyright" CONTENT="2019 casimages" />
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+		
+		
+
+		<!-- /vendor_manager CSS -->
+		<link rel="stylesheet" href="/vendor_manager/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="/vendor_manager/animate/animate.css">
+
+		<link rel="stylesheet" href="/vendor_manager/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="/vendor_manager/magnific-popup/magnific-popup.css" />
+		<link rel="stylesheet" href="/vendor_manager/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+		<!-- Specific Page /vendor_manager CSS -->
+		<link rel="stylesheet" href="/vendor_manager/jquery-ui/jquery-ui.css" />
+		<link rel="stylesheet" href="/vendor_manager/jquery-ui/jquery-ui.theme.css" />
+		<link rel="stylesheet" href="/vendor_manager/bootstrap-multiselect/bootstrap-multiselect.css" />
+		<link rel="stylesheet" href="/vendor_manager/morris/morris.css" />
+		<link rel="stylesheet" href="/vendor_manager/select2/css/select2.css" />
+		<link rel="stylesheet" href="/vendor_manager/select2-bootstrap-theme/select2-bootstrap.min.css" />
+		<link rel="stylesheet" href="/vendor_manager/pnotify/pnotify.custom.css" />
+
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="/css/manager_theme.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="/css/skins/manager_default.css" />
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="/css/manager_custom.css">
+
+		<!-- Head Libs -->
+		<script src="/vendor_manager/modernizr/modernizr.js"></script>
+		
+		
+		<script src="/vendor_manager/jquery/jquery.js"></script>
+		<script src="/vendor_manager/jquery-ui/jquery-ui.js"></script>
+		
+
+	</head>
+	<body>
+		<section class="body">
+			
+			
+
+			
+
+
+
+<!-- start: header -->
+			<header class="header">
+				<div class="logo-container">
+					<a href="/" class="logo">
+						<img src="/images/manager_logo.png" width="130" height="35" alt="Manager Casimages" />
+					</a>
+					<div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
+						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+					</div>
+				</div>
+			
+				<!-- start: search & user box -->
+				<div class="header-right">
+			
+					
+				<!--
+					<div id="countdown" class="text-center">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						   
+						</div>
+					</div>
+
+					<form action="pages-search-results.html" class="search nav-form">
+						<div class="input-group input-search">
+																	<img src='/images/manager/comodo_secure_seal_113x59_transp.png' height='48' title='Site sécurisé avec le certificat COMODO SSL'>
+
+												</div>
+					</form>-->
+
+					<form action="/m_rechercher" class="search nav-form ">
+						<div class="input-group input-search">
+							<input type="text" class="form-control" name="q" id="q" placeholder="Image ou fichier...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</form>
+
+
+					<span class="separator"></span>
+			
+					<ul class="notifications">
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-tasks"></i>
+								<!--<span class="badge">0</span>!-->
+							</a>
+			
+							<div class="dropdown-menu notification-menu large">
+								<div class="notification-title">
+									<span class="float-right badge badge-default">0</span>
+									Serveurs
+								</div>
+			
+								<div class="content">
+									<ul><!--
+										<li>
+											<p class="clearfix mb-1">
+												<span class="message float-left">Generating Sales Report</span>
+												<span class="message float-right text-dark">60%</span>
+											</p>
+											<div class="progress progress-xs light">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+											</div>
+										</li>
+			
+										<li>
+											<p class="clearfix mb-1">
+												<span class="message float-left">Importing Contacts</span>
+												<span class="message float-right text-dark">98%</span>
+											</p>
+											<div class="progress progress-xs light">
+												<div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+											</div>
+										</li>
+			
+										<li>
+											<p class="clearfix mb-1">
+												<span class="message float-left">Uploading something big</span>
+												<span class="message float-right text-dark">33%</span>
+											</p>
+											<div class="progress progress-xs light mb-1">
+												<div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+											</div>
+										</li>-->
+										<li>
+											Aucun problème de serveurs.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-envelope"></i>
+															</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="float-right badge badge-default">0</span>
+									Messages
+								</div>
+			
+								<div class="content">
+									<ul><!--
+										<li>
+											<a href="#" class="clearfix">
+												<figure class="image">
+													<img src="img/!sample-user.jpg" alt="Joseph Doe Junior" class="rounded-circle" />
+												</figure>
+												<span class="title">Joseph Doe</span>
+												<span class="message">Lorem ipsum dolor sit.</span>
+											</a>
+										</li>-->
+										<li>
+											
+												
+										</li>
+									</ul>
+
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">Aucun message</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+								<i class="fa fa-bell"></i>
+								<!--<span class="badge">0</span>!-->
+							</a>
+			
+							<div class="dropdown-menu notification-menu">
+								<div class="notification-title">
+									<span class="float-right badge badge-default">0</span>
+									Alertes
+								</div>
+			
+								<div class="content">
+									<ul><!--
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-thumbs-down bg-danger text-light"></i>
+												</div>
+												<span class="title">Server is Down!</span>
+												<span class="message">Just now</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-lock bg-warning text-light"></i>
+												</div>
+												<span class="title">User Locked</span>
+												<span class="message">15 minutes ago</span>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="clearfix">
+												<div class="image">
+													<i class="fa fa-signal bg-success text-light"></i>
+												</div>
+												<span class="title">Connection Restaured</span>
+												<span class="message">10/10/2017</span>
+											</a>
+										</li>-->
+										<li>
+											
+												Aucune alerte en cours.
+											
+										</li>
+									</ul>
+			
+									<hr />
+			
+									<div class="text-right">
+										<a href="#" class="view-more">Voir tout</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+			
+					<span class="separator"></span>
+			
+					<div id="userbox" class="userbox">
+						<a href="#" data-toggle="dropdown">
+							<figure class="profile-picture">
+								<img src="/images/manager/avatar_homme.jpg" alt="Joseph Doe" class="rounded-circle" data-lock-picture="images/!logged-user.jpg" />
+							</figure>
+							<div class="profile-info" data-lock-name="Sergeileduc" data-lock-email="johndoe@okler.com">
+								<span class="name">Sergeileduc</span>
+								<span class="role">Offre Decouverte</span>
+							</div>
+			
+							<i class="fa custom-caret"></i>
+						</a>
+			
+						<div class="dropdown-menu">
+							<ul class="list-unstyled mb-2">
+								<li class="divider"></li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="/m_compte" ><i class="fa fa-lock"></i> Mon compte</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="/m_offres" ><i class="fa fa-euro"></i> Nos offres</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="/m_infos"><i class="fa fa-user"></i> Mes informations</a>
+								</li>
+								<li>
+									<a role="menuitem" tabindex="-1" href="/m_deconnexion"><i class="fa fa-power-off"></i> Déconnexion</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end: search & user box -->
+			</header>
+			<!-- end: header -->
+
+
+<script>
+countdownManager = {
+    // Configuration
+    targetTime: new Date('2018-10-28 23:59:00'), // Date cible du compte à rebours (00:00:00)
+    displayElement: { // Elements HTML où sont affichés les informations
+        day:  null,
+        hour: null,
+        min:  null,
+        sec:  null
+    },
+     
+    // Initialisation du compte à rebours (à appeler 1 fois au chargement de la page)
+    init: function(){
+        // Récupération des références vers les éléments pour l'affichage
+        // La référence n'est récupérée qu'une seule fois à l'initialisation pour optimiser les performances
+        this.displayElement.day  = jQuery('#countdown_day');
+        this.displayElement.hour = jQuery('#countdown_hour');
+        this.displayElement.min  = jQuery('#countdown_min');
+        this.displayElement.sec  = jQuery('#countdown_sec');
+         
+        // Lancement du compte à rebours
+        this.tick(); // Premier tick tout de suite
+        window.setInterval("countdownManager.tick();", 1000); // Ticks suivant, répété toutes les secondes (1000 ms)
+    },
+     
+    // Met à jour le compte à rebours (tic d'horloge)
+    tick: function(){
+        // Instant présent
+        var timeNow  = new Date();
+         
+        // On s'assure que le temps restant ne soit jamais négatif (ce qui est le cas dans le futur de targetTime)
+        if( timeNow > this.targetTime ){
+            timeNow = this.targetTime;
+        }
+         
+        // Calcul du temps restant
+        var diff = this.dateDiff(timeNow, this.targetTime);
+         
+        this.displayElement.day.text(  diff.day  );
+        this.displayElement.hour.text( diff.hour );
+        this.displayElement.min.text(  diff.min  );
+        this.displayElement.sec.text(  diff.sec  );
+    },
+     
+    // Calcul la différence entre 2 dates, en jour/heure/minute/seconde
+    dateDiff: function(date1, date2){
+        var diff = {}                           // Initialisation du retour
+        var tmp = date2 - date1;
+ 
+        tmp = Math.floor(tmp/1000);             // Nombre de secondes entre les 2 dates
+        diff.sec = tmp % 60;                    // Extraction du nombre de secondes
+        tmp = Math.floor((tmp-diff.sec)/60);    // Nombre de minutes (partie entière)
+        diff.min = tmp % 60;                    // Extraction du nombre de minutes
+        tmp = Math.floor((tmp-diff.min)/60);    // Nombre d'heures (entières)
+        diff.hour = tmp % 24;                   // Extraction du nombre d'heures
+        tmp = Math.floor((tmp-diff.hour)/24);   // Nombre de jours restants
+        diff.day = tmp;
+ 
+        return diff;
+    }
+};
+jQuery(function($){
+    // Lancement du compte à rebours au chargement de la page
+    countdownManager.init();
+});
+
+</script>
+
+	
+			
+
+			<div class="inner-wrapper">
+				<!-- start: sidebar -->
+				<aside id="sidebar-left" class="sidebar-left">
+				
+				    <div class="sidebar-header">
+				        <div class="sidebar-title">
+				            Navigation
+				        </div>
+				        <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+				            <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+				        </div>
+				    </div>
+				
+				    <div class="nano">
+				        <div class="nano-content">
+				            <nav id="menu" class="nav-main" role="navigation">
+				            
+				                <ul class="nav nav-main">
+				                    <li>
+				                        <a class="nav-link" href="/m_compte">
+				                            <i class="fa fa-home" aria-hidden="true"></i>
+				                            <span>Tableau de bord</span>
+				                        </a>                        
+				                    </li>
+				                    <li class="nav-parent ">
+				                        <a class="nav-link" href="#">
+				                            <i class="fa fa-image" aria-hidden="true"></i>
+				                            <span>Photos</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li  >
+				                                <a class="nav-link" href="/m_photos">
+				                                    Mes Photos
+				                                </a>
+				                            </li>
+				                            <li class="nav-parent">
+				                                <a>
+				                                    Options des Albums
+				                                </a>
+				                                <ul class="nav nav-children">
+				                                    <li  >
+				                                        <a class="nav-link" href="/m_palbums">
+				                                            Publier un album
+				                                        </a>
+				                                    </li>
+				                                    <li  >
+				                                        <a class="nav-link" href="/m_valbums">
+				                                            Vue globable de mes albums
+				                                        </a>
+				                                    </li>
+													<li  >
+				                                        <a class="nav-link" href="/m_albums_synthese">
+				                                            Synthèse de mes albums
+				                                        </a>
+				                                    </li>
+				                                </ul>
+				                            </li>
+				                        </ul>
+				                    </li>
+				                    <li class="nav-parent ">
+				                        <a class="nav-link" href="#">
+				                            <i class="fa fa-copy" aria-hidden="true"></i>
+				                            <span>Fichiers</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li  >
+				                                <a class="nav-link" href="/m_fichiers">
+				                                    Mes Fichiers
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="/m_fichiers_synthese">
+				                                    Synthèse de mes dossiers
+				                                </a>
+				                            </li>
+				                        </ul>
+				                    </li>
+									<li class="nav-parent ">
+				                        <a class="nav-link" href="#">
+				                            <i class="fa fa-file-video-o" aria-hidden="true"></i>
+				                            <span>Vidéos</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li  >
+				                                <a class="nav-link" href="/out.php?id=84">
+				                                    Mes vidéos
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="#">
+				                                    Synthèse de mes vidéos
+				                                </a>
+				                            </li>
+				                        </ul>
+				                    </li>
+									<li class="nav-parent ">
+				                        <a class="nav-link" href="#">
+				                            <i class="fa fa-music" aria-hidden="true"></i>
+				                            <span>Musiques</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li  >
+				                                <a class="nav-link" href="/out.php?id=85">
+				                                    Mes musiques
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="#">
+				                                    Synthèse de mes musiques
+				                                </a>
+				                            </li>
+				                        </ul>
+				                    </li>
+				                    <li class="nav-parent ">
+				                        <a class="nav-link" href="#">
+				                            <i class="fa fa-cogs" aria-hidden="true"></i>
+				                            <span>Services</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+											<li  >
+				                                <a class="nav-link" href="/m_sv_ply">
+				                                    MesPlaylists
+				                                </a>
+				                            </li>
+											<li  >
+				                                <a class="nav-link" href="/m_sv_cvf">
+				                                     ConvertFiles
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="/m_sv_mtf">
+				                                    MailToFriends
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="/m_sv_ubf">
+				                                    UploadByFriends
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="/m_sv_ztf">
+				                                    ZipToFriends
+				                                </a>
+				                            </li>
+											 
+											 <li  >
+				                                <a class="nav-link" href="/out.php?id=71">
+				                                    UploadToFolder
+				                                </a>
+				                            </li>
+
+											<li  >
+				                                <a class="nav-link" href="/m_sv_shw">
+				                                    DiaporamaExportable
+				                                </a>
+				                            </li>
+											
+				                        </ul>
+				                    </li>
+				                    <li class="nav-parent ">
+				                        <a class="nav-link" href="#">
+				                            <i class="fa fa-plus aria-hidden="true"></i>
+				                            <span>Plus</span>
+				                        </a>
+				                        <ul class="nav nav-children">
+				                            <li  >
+				                                <a class="nav-link" href="/m_parametres">
+				                                    Paramètres
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="/m_infos">
+				                                    Mes informations
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="/m_factures">
+				                                    Mes factures
+				                                </a>
+				                            </li>
+				                            <li  >
+				                                <a class="nav-link" href="/m_aide">
+				                                    Aide
+				                                </a>
+				                            </li>
+				                        </ul>
+				                    </li>
+				
+				                </ul>
+				            </nav>
+				
+				            <hr class="separator" />
+				
+				            <div class="sidebar-widget widget-stats">
+				                <div class="widget-header">
+				                    <h6>Quota de stockage</h6>
+				                    <div class="widget-toggle">+</div>
+				                </div>
+				                <div class="widget-content">
+				                    <ul>
+				                        <li>
+				                            <span class="stats-title">Espace utilisé</span>
+				                            <span class="stats-complete">4%</span>
+				                            <div class="progress">
+				                                <div class="progress-bar progress-bar-primary progress-without-number" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100" style="width: 4%;">
+				                                    <span class="sr-only">4% utilisé</span>
+				                                </div>
+				                            </div>
+				                        </li>
+				                    </ul>
+																										<a href='/out.php?id=55' class="text-muted text-1">Augmenter mon espace de stockage</a>
+																				                </div>
+				            </div>
+
+							<hr class="separator" />
+				
+				            <div class="sidebar-widget widget-stats">
+												                
+												            </div>
+				        </div>
+
+						 
+				
+				        <script>
+				            // Maintain Scroll Position
+				            if (typeof localStorage !== 'undefined') {
+				                if (localStorage.getItem('sidebar-left-position') !== null) {
+				                    var initialPosition = localStorage.getItem('sidebar-left-position'),
+				                        sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+				                    
+				                    sidebarLeft.scrollTop = initialPosition;
+				                }
+				            }
+				        </script>
+				        
+				
+				    </div>
+				
+				</aside>
+				<!-- end: sidebar -->	
+
+			
+			
+
+
+
+				<section role="main" class="content-body">
+					<header class="page-header">
+						<h2>moteur de recherche</h2>
+					
+						<div class="right-wrapper text-right">
+							<ol class="breadcrumbs">
+								<li>
+									<a href="/m_compte">
+										<i class="fa fa-home"></i>
+									</a>
+								</li>
+								<li><span>Mon compte</span></li>
+								<li><span>moteur de recherche</span></li>
+							</ol>
+					
+							<a class="sidebar-right-toggle" href='/u/sergeileduc'><i class="fa fa-photo"></i></a>
+						</div>
+					</header>
+
+					
+
+
+
+<section class="media-gallery">
+
+
+<div class="search-content" >
+						<div class="search-control-wrapper">
+							
+								<div class="form-group">
+									<div class="input-group">
+										<input id="watsearch" type="text" class="form-control"  value="" placeholder="Rechercher une image ou un fichier">
+										<span class="input-group-btn">
+											<button id="gosearch" class="btn btn-primary p-3" type="button">Rechercher</button>
+										</span>
+									</div>
+									
+									<div class='form-row'>
+										<div class="form-group">
+												<div style='float:left;margin:10px;'>
+													Rechercher dans :
+												</div>
+												<div class="radio-custom radio-primary" style='float:left;margin:10px;'>
+													<input id="rad_images" name="wf" type="radio" value="images" checked>
+													<label for="rad_images">Images</label>
+												</div>
+												<div class="radio-custom radio-primary" style='float:left;margin:10px;'>
+													<input id="rad_fichiers" name="wf" type="radio"  value="fichiers">
+													<label for="rad_fichiers">Fichiers</label>
+												</div>
+										</div>
+									</div>
+									
+									
+															
+								</div>
+							
+						</div>
+
+
+						<div class="search-toolbar" style='background:#fff;'>
+							<ul class="list-unstyled nav nav-tabs nav-pills">
+								<li class="nav-item active">
+									<a id="fieldname" class="nav-link" href="#everything" data-toggle="tab" style='text-transform:capitalize;'>images</a>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content pb-5" style='background:none;'>
+							
+							
+							
+							<div id="everything" class="tab-pane active">
+							
+
+
+								<div class=" mg-main">
+
+							<div id='reslistimg' >
+							<div id='affimages' >
+
+								<p class="total-results text-muted">Affichage des 2 résultats</p>
+
+							
+							
+				<div>
+					
+								
+						
+
+
+							
+											
+					
+
+
+						
+
+						<div >
+										
+									
+																													
+			
+					
+						
+					
+
+				</div>
+				
+			
+
+				
+
+				
+				
+				<div id='listimg' style='clear:both;float:left;margin-left:10px;width:100%;margin-top:20px;'>
+					
+				<div id=''><div id='selectable' class='row mg-files' data-sort-destination data-sort-id='media-gallery'><div id='draggable' name='17320516' class='isotope-item document col-sm-6 col-md-4 col-lg-3 draggableimg' style='min-width:190px;max-width: 280px;z-index:50;'>
+										<div class='thumbnail pouet' name='17320516' id='th17320516'>
+											<div class='thumb-preview'>
+												<a class='thumb-image' href='https://nsm09.casimages.com/img/2021/03/17//21031703204821371617320516.png'>
+													<img src='https://nsm09.casimages.com/img/2021/03/17//mini2_21031703204821371617320516.png' class='img-fluid' alt='Fichier'>
+												</a>
+												<div class='mg-thumb-options'>
+													<div class='mg-zoom'><i class='fa fa-search'></i></div>
+													<div class='mg-toolbar'>
+														<div class='mg-option checkbox-custom checkbox-inline'>
+															<input type='checkbox' id='chkbx17320516' value='17320516' mc_mini='https://nsm09.casimages.com/img/2021/03/17//mini_21031703204821371617320516.png' mc_big='https://nsm09.casimages.com/img/2021/03/17//21031703204821371617320516.png' mc_ld='https://www.casimages.com/i/21031703204821371617320516.png.html' mc_ltd='<a href="https://www.casimages.com/i/21031703204821371617320516.png.html" title="upload image">Lien vers mon image</a>' mc_html_m='<a href="https://www.casimages.com/i/21031703204821371617320516.png.html" title="hebergeur image" target="_blank"><img src="https://nsm09.casimages.com/img/2021/03/17//mini_21031703204821371617320516.png" border="0" alt="Hébergeur image" /></a>' mc_html_g='<a href="https://www.casimages.com/i/21031703204821371617320516.png.html" title="hebergeur image" target="_blank"><img src="https://nsm09.casimages.com/img/2021/03/17//21031703204821371617320516.png" border="0" alt="Hébergeur image" /></a>' mc_forum_m='[URL=https://www.casimages.com/i/21031703204821371617320516.png.html][IMG]https://nsm09.casimages.com/img/2021/03/17//mini_21031703204821371617320516.png[/IMG][/url]' mc_forum_g='[URL=https://www.casimages.com/i/21031703204821371617320516.png.html][IMG]https://nsm09.casimages.com/img/2021/03/17//21031703204821371617320516.png[/IMG][/url]'>
+															<label for='chkbx17320516'>SELECT</label>
+														</div>
+														<div class='mg-group float-right'>
+															<a href='#modalEditFileName' onclick="$('#newnomFileName').val('sample image.png');" data-var2='17320516' class='modal-with-zoom-anim'><i class='fa fa-edit'></i></a>
+															<a id='clkcodimg' class='modal-with-zoom-anim' href='#modalShareFile' data-var6='17320516' onclick="$('#FileNameToShare').html('sample image.png');"><i class='fa fa-share'></i></a>
+															<button class='dropdown-toggle mg-toggle' data-toggle='dropdown'><span class='caret'></span></button>
+															<div class='dropdown-menu mg-dropdown' role='menu'>
+																<a class='dropdown-item text-1 modal-with-zoom-anim' href='#modalMoveFile' data-var3='17320516' onclick="$('#FileNameToMove').html('sample image.png');"><i class='fa fa-arrow-right'></i> Déplacer</a>
+																<a id='clkcodimg' class='dropdown-item text-1 modal-with-zoom-anim' href='#modalShareFile' data-var6='17320516' onclick="$('#FileNameToShare').html('sample image.png');"><i class='fa fa-share'></i> Partager</a>
+																<a id='clkpropimg' class='dropdown-item text-1 modal-with-zoom-anim' href='#modalSeeProperty' data-var7='17320516'><i class='fa fa-info-circle'></i> Propriétés</a>
+
+																<a class='dropdown-item text-1 modal-with-zoom-anim' href='#modalDeleteFile' data-var4='17320516' onclick="$('#delimg').html('sample image.png');"><i class='fa fa-trash-o'></i> Supprimer</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h5 class=' font-weight-semibold'>sample image.png<small></small></h5>
+											<div class='mg-description'>
+												<small class='float-left text-muted'>17-03-2021 | 125x125</small>
+												<small class='float-right text-muted'>12 Ko</small>
+											</div>
+										</div>
+									</div><div id='draggable' name='17320512' class='isotope-item document col-sm-6 col-md-4 col-lg-3 draggableimg' style='min-width:190px;max-width: 280px;z-index:49;'>
+										<div class='thumbnail pouet' name='17320512' id='th17320512'>
+											<div class='thumb-preview'>
+												<a class='thumb-image' href='https://nsm09.casimages.com/img/2021/03/17//21031703203721371617320511.png'>
+													<img src='https://nsm09.casimages.com/img/2021/03/17//mini2_21031703203721371617320511.png' class='img-fluid' alt='Fichier'>
+												</a>
+												<div class='mg-thumb-options'>
+													<div class='mg-zoom'><i class='fa fa-search'></i></div>
+													<div class='mg-toolbar'>
+														<div class='mg-option checkbox-custom checkbox-inline'>
+															<input type='checkbox' id='chkbx17320512' value='17320512' mc_mini='https://nsm09.casimages.com/img/2021/03/17//mini_21031703203721371617320511.png' mc_big='https://nsm09.casimages.com/img/2021/03/17//21031703203721371617320511.png' mc_ld='https://www.casimages.com/i/21031703203721371617320511.png.html' mc_ltd='<a href="https://www.casimages.com/i/21031703203721371617320511.png.html" title="upload image">Lien vers mon image</a>' mc_html_m='<a href="https://www.casimages.com/i/21031703203721371617320511.png.html" title="hebergeur image" target="_blank"><img src="https://nsm09.casimages.com/img/2021/03/17//mini_21031703203721371617320511.png" border="0" alt="Hébergeur image" /></a>' mc_html_g='<a href="https://www.casimages.com/i/21031703203721371617320511.png.html" title="hebergeur image" target="_blank"><img src="https://nsm09.casimages.com/img/2021/03/17//21031703203721371617320511.png" border="0" alt="Hébergeur image" /></a>' mc_forum_m='[URL=https://www.casimages.com/i/21031703203721371617320511.png.html][IMG]https://nsm09.casimages.com/img/2021/03/17//mini_21031703203721371617320511.png[/IMG][/url]' mc_forum_g='[URL=https://www.casimages.com/i/21031703203721371617320511.png.html][IMG]https://nsm09.casimages.com/img/2021/03/17//21031703203721371617320511.png[/IMG][/url]'>
+															<label for='chkbx17320512'>SELECT</label>
+														</div>
+														<div class='mg-group float-right'>
+															<a href='#modalEditFileName' onclick="$('#newnomFileName').val('sample image.png');" data-var2='17320512' class='modal-with-zoom-anim'><i class='fa fa-edit'></i></a>
+															<a id='clkcodimg' class='modal-with-zoom-anim' href='#modalShareFile' data-var6='17320512' onclick="$('#FileNameToShare').html('sample image.png');"><i class='fa fa-share'></i></a>
+															<button class='dropdown-toggle mg-toggle' data-toggle='dropdown'><span class='caret'></span></button>
+															<div class='dropdown-menu mg-dropdown' role='menu'>
+																<a class='dropdown-item text-1 modal-with-zoom-anim' href='#modalMoveFile' data-var3='17320512' onclick="$('#FileNameToMove').html('sample image.png');"><i class='fa fa-arrow-right'></i> Déplacer</a>
+																<a id='clkcodimg' class='dropdown-item text-1 modal-with-zoom-anim' href='#modalShareFile' data-var6='17320512' onclick="$('#FileNameToShare').html('sample image.png');"><i class='fa fa-share'></i> Partager</a>
+																<a id='clkpropimg' class='dropdown-item text-1 modal-with-zoom-anim' href='#modalSeeProperty' data-var7='17320512'><i class='fa fa-info-circle'></i> Propriétés</a>
+
+																<a class='dropdown-item text-1 modal-with-zoom-anim' href='#modalDeleteFile' data-var4='17320512' onclick="$('#delimg').html('sample image.png');"><i class='fa fa-trash-o'></i> Supprimer</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<h5 class=' font-weight-semibold'>sample image.png<small></small></h5>
+											<div class='mg-description'>
+												<small class='float-left text-muted'>17-03-2021 | 125x125</small>
+												<small class='float-right text-muted'>12 Ko</small>
+											</div>
+										</div>
+									</div></div>
+				
+
+				
+
+					<div style='clear:both;display:inline-block;margin-top:40px;margin-bottom:50px;'>
+					<input type="hidden" id="curep" name="curep" value="1" />
+					<input type="hidden" id="nump" name="nump" value="1" />
+					<input type="hidden" id="mode_listimg" name="mode_listimg" value="2" />
+					<a href="#" id='watp' class='clkchangepage' myp='1' ><b>P 1</b></a> | 					</div>
+					  
+				</div>	
+
+									
+
+								
+						</div>
+							</div>
+	
+								</div>
+
+</div></div>
+
+
+
+
+
+							
+							</div>
+							
+						
+
+
+
+							
+						</div>
+					</div>
+
+
+
+
+	
+<div id="modalEditFileName" class="zoom-anim-dialog modal-block modal-header-color modal-block-primary mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Changer le nom de l'image</h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<input type="hidden" id="myVar2" name="Var2" value="[placeholder]" />
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						<label for="newnomFileName">Nouveau nom de l'image</label>
+						<input type="text" class="form-control" id="newnomFileName" placeholder="Nouveau nom de l'image">
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-primary modal-confirm" id="goeditfilename">Changer le nom</button>
+					<button class="btn btn-default modal-dismiss">Annuler</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+
+<div id="modalMoveFile" class="zoom-anim-dialog modal-block modal-header-color modal-block-primary mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Déplacer l'image <span id='FileNameToMove'></span></h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<input type="hidden" id="myVar3" name="Var3" value="[placeholder]" />
+				
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						
+							Séléctionnez le dossier de destination : 
+				<select name='reptogo' id='reptogo' class='form-control'>
+				<option name='reptogo' id='reptogo' value='0' disabled>Mes albums</options>
+				
+				<option name='reptogo' id='reptogo' value='0'>Images non classés</options><option name='reptogo' id='reptogo' value='428293'>Scantrad</options></select>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-primary modal-confirm" id="gomovefile">Déplacer l'image</button>
+					<button class="btn btn-default modal-dismiss">Annuler</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+
+<div id="modalShareFile" class="zoom-anim-dialog modal-block modal-header-color modal-block-primary mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Partager l'image <span id='FileNameToShare'></span></h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<input type="hidden" id="myVar6" name="Var6" value="[placeholder]" />
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						
+							<div id='codimg'></div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-default modal-dismiss">Fermer</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+<div id="modalSeeProperty" class="zoom-anim-dialog modal-block modal-header-color modal-block-primary mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Propriétés de l'image</h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<input type="hidden" id="myVar7" name="Var7" value="[placeholder]" />
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						
+							<div id='propimg'></div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-default modal-dismiss">Fermer</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+<div id="modalDeleteFile" class="zoom-anim-dialog modal-block modal-header-color modal-block-danger mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Supprimer l'image <span id='delimg'></span></h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<input type="hidden" id="myVar4" name="Var4" value="[placeholder]" />
+				<div class="modal-wrapper">
+					<div class="modal-icon">
+						<i class="fa fa-times-circle"></i>
+					</div>
+					<div class="modal-text">
+						<h4>ATTENTION</h4>
+						<p>Confirmez-vous la suppression de l'image ?</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-danger modal-confirm" id="godeletefile">Confirmer</button>
+					<button class="btn btn-default modal-dismiss">Annuler</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+
+
+<div id="modalEditFileName_fic" class="zoom-anim-dialog modal-block modal-header-color modal-block-primary mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Changer le nom du fichier</h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<input type="hidden" id="myVar12" name="Var12" value="[placeholder]" />
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						<label for="newnomFileName_fic">Nouveau nom du fichier</label>
+						<input type="text" class="form-control" id="newnomFileName_fic" placeholder="Nouveau nom du fichier">
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-primary modal-confirm" id="goeditfilename_fic">Changer le nom</button>
+					<button class="btn btn-default modal-dismiss">Annuler</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+
+<div id="modalMoveFile_fic" class="zoom-anim-dialog modal-block modal-header-color modal-block-primary mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Déplacer le fichier <span id='FileNameToMove'></span></h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<input type="hidden" id="myVar13" name="Var13" value="[placeholder]" />
+				
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						
+							Séléctionnez le dossier de destination : 
+				<select name='reptogo' id='reptogo' class='form-control'>
+				<option name='reptogo' id='reptogo' value='0' disabled>Mes dossiers</options>
+				
+				<option name='reptogo' id='reptogo' value='0'>Fichiers non classés</options></select>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-primary modal-confirm" id="gomovefile_fic">Déplacer le fichier</button>
+					<button class="btn btn-default modal-dismiss">Annuler</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+
+<div id="modalShareFile_fic" class="zoom-anim-dialog modal-block modal-header-color modal-block-primary mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Codes de partage du fichier</h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						
+							<div id='codimg'></div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-default modal-dismiss">Fermer</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+<div id="modalSeeProperty_fic" class="zoom-anim-dialog modal-block modal-header-color modal-block-primary mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Propriétés du fichier</h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<div class="form-row">
+					<div class="form-group col-md-12">
+						
+							<div id='propfic'></div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-default modal-dismiss">Fermer</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+<div id="modalDeleteFile_fic" class="zoom-anim-dialog modal-block modal-header-color modal-block-danger mfp-hide">
+	<section class="card">
+		<header class="card-header">
+			<h2 class="card-title">Supprimer le fichier <span id='delimg'></span></h2>
+		</header>
+		<div class="card-body">
+			<form>
+				<input type="hidden" id="myVar14" name="Var14" value="[placeholder]" />
+				<div class="modal-wrapper">
+					<div class="modal-icon">
+						<i class="fa fa-times-circle"></i>
+					</div>
+					<div class="modal-text">
+						<h4>ATTENTION</h4>
+						<p>Confirmez-vous la suppression du fichier ?</p>
+					</div>
+				</div>
+			</form>
+		</div>
+		<footer class="card-footer">
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="btn btn-danger modal-confirm" id="godeletefile_fic">Confirmer</button>
+					<button class="btn btn-default modal-dismiss">Annuler</button>
+				</div>
+			</div>
+		</footer>
+	</section>
+</div>
+
+
+
+
+</section>
+
+
+<script>
+
+$(document).on('click', '#gosearch', function (e) {
+
+		var watsearch = $("#watsearch").val();
+
+		var wf = $("input[name=wf]:checked").val();
+		var mode_listimg = encodeURIComponent($("#mode_listimg").val());
+		$('#fieldname').html(wf);
+		$('#reslistimg').load('/m_rechercher?wf='+wf+'&q='+watsearch+'&mode_listimg='+mode_listimg+' #affimages');
+
+	});
+
+</script>
+
+
+					
+				</section>
+			</div>
+
+		
+
+		</section>
+
+		<!-- /vendor_manager -->
+		
+		<script src="/vendor_manager/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="/vendor_manager/popper/umd/popper.min.js"></script>
+		<script src="/vendor_manager/bootstrap/js/bootstrap.js"></script>
+		<script src="/vendor_manager/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+		<script src="/vendor_manager/common/common.js"></script>
+		<script src="/vendor_manager/nanoscroller/nanoscroller.js"></script>
+		<script src="/vendor_manager/magnific-popup/jquery.magnific-popup.js"></script>
+		<script src="/vendor_manager/jquery-placeholder/jquery-placeholder.js"></script>
+		<script src="/vendor_manager/pnotify/pnotify.custom.js"></script>
+		
+		<!-- Specific Page /vendor_manager -->
+		
+		
+				<script src="/vendor_manager/isotope/isotope.js"></script>
+		<link rel="stylesheet" href="/css/style.min.css" />
+		<script src="/vendor_manager/select2/js/select2.js"></script>
+		
+		
+				
+		
+		
+		
+		
+		
+
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="/js/theme_manager.js"></script>
+		
+		<!-- Theme Custom -->
+		<script src="/js/custom_manager.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="/js/theme.init_manager.js"></script>
+
+		<!-- Examples -->
+		
+		
+		
+				<script src="/js/examples/examples.mediagallery.js?v=2019092401"></script>
+		<script src="/js/examples/m_rechercher.js?v=2018110201"></script>
+		
+		
+		
+		
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-1389541-1']);		  
+		  _gaq.push(['_setSiteSpeedSampleRate', 100]);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+	</body>
+</html>

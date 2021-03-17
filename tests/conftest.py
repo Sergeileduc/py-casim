@@ -1,10 +1,11 @@
 """Pytest global fixtures and conf."""
 
 from pathlib import Path
+
 import pytest
 from requests import Session
 
-from py_casim.casim import Casim
+from py_casim.casim import Casim, CasimLogged
 
 
 @pytest.fixture
@@ -25,6 +26,22 @@ def response():
     return content
 
 
+@pytest.fixture
+def response2():
+    """Read html sample from resp.html file. (for CasimLoggedin)"""
+    path = Path("tests/test_tools/response_loggedin_search.html")
+    content = path.read_text()
+    return content
+
+
+@pytest.fixture
+def response3():
+    """Read html sample from resp.html file. (for CasimLoggedin)"""
+    path = Path("tests/test_tools/resp_share_loggedin.html")
+    content = path.read_text()
+    return content
+
+
 class MockResponse:
     """Fake requests resonse."""
 
@@ -35,7 +52,7 @@ class MockResponse:
 
 
 @pytest.fixture(autouse=True)
-def mock_session(monkeypatch, response):
+def mock_session(monkeypatch, response, response2, response3):
     """Requests.get() mocked to return {'mock_key':'mock_response'}."""
     image_id = "200217113356178313.png"
 
@@ -47,6 +64,8 @@ def mock_session(monkeypatch, response):
             return MockResponse("", 200)
         elif url == Casim._url_casi_share.format(image_id):
             return MockResponse(response, 200)
+        elif CasimLogged._url_casi_share in url:
+            return MockResponse(response3, 200)
         else:
             return MockResponse("", 404)
 
@@ -54,6 +73,10 @@ def mock_session(monkeypatch, response):
         url = args[1]
         if url == Casim._url_upload:
             return MockResponse(image_id, 200)
+        elif CasimLogged._url_upload in url:
+            return MockResponse("", 200)
+        elif CasimLogged._url_search in url:
+            return MockResponse(response2, 200)
 
     monkeypatch.setattr(Session, "get", mock_get)
     monkeypatch.setattr(Session, "post", mock_post)
