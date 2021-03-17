@@ -230,7 +230,7 @@ class CasimLogged():
         r = self.session.post(CasimLogged._url_search, params=payload)
         image_id = get_image_id(r.text, self.image.name)
         if image_id:
-            params = {"coding": image_id}
+            params = {"codimg": image_id}
             r = self.session.get(CasimLogged._url_casi_share, params=params)
             return get_share_loggedin(r.text, index) if index else get_all_shares_loggedin(r.text)  # noqa: E501
 

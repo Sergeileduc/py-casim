@@ -58,9 +58,10 @@ def get_all_shares_loggedin(html):
 def get_folder_id(html, name):
     """Search folder by its name, and return his ID."""
     soup = get_soup(html)
+    # print(soup.prettify())
     albs = soup.find_all('option', id='reptogo')
     for a in albs:
-        if a.text == name:
+        if a.next_element == name:
             return a.get('value')
     return None
 
