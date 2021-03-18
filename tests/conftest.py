@@ -42,6 +42,14 @@ def response3():
     return content
 
 
+@pytest.fixture
+def response4():
+    """Read html sample from resp.html file. (for CasimLoggedin)"""
+    path = Path("tests/test_tools/resp_folders.html")
+    content = path.read_text()
+    return content
+
+
 class MockResponse:
     """Fake requests resonse."""
 
@@ -52,7 +60,7 @@ class MockResponse:
 
 
 @pytest.fixture(autouse=True)
-def mock_session(monkeypatch, response, response2, response3):
+def mock_session(monkeypatch, response, response2, response3, response4):
     """Requests.get() mocked to return {'mock_key':'mock_response'}."""
     image_id = "200217113356178313.png"
 
@@ -66,6 +74,8 @@ def mock_session(monkeypatch, response, response2, response3):
             return MockResponse(response, 200)
         elif CasimLogged._url_casi_share in url:
             return MockResponse(response3, 200)
+        elif CasimLogged._url_m_photos in url:
+            return MockResponse(response4, 200)
         else:
             return MockResponse("", 404)
 
