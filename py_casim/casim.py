@@ -17,7 +17,8 @@ class Casim():
     # CASIMAGES
     _url = "https://www.casimages.com/"
     _url_upload = "https://www.casimages.com/upload_ano_multi.php"
-    _url_casi_share = "https://www.casimages.com/codes_ano_multi.php?img={}"
+    _url_casi_share = "https://www.casimages.com/codes_ano_multi.php"
+    _url_resize = "https://www.casimages.com/ajax/s_ano_resize.php"
     #: Valid resize values for resize keyword argument
     resize_values = ["100", "125", "320", "640", "800", "1024", "1280", "1600"]
 
@@ -51,11 +52,9 @@ class Casim():
 
     def _set_resize(self):
         if self.resize:
-            self.url_resize = (f"https://www.casimages.com/"
-                               f"ajax/s_ano_resize.php?dim={self.resize}")
-            self.session.get(self.url_resize)
-            logger.info('ask for resize with value %s and url : %s',
-                        self.resize, self.url_resize)
+            params = {"dim": self.resize}
+            self.session.get(Casim._url_resize, params=params)
+            logger.info('ask for resize with value %s', self.resize)
 
     def _upload_image(self):
         """Upload image and return id."""
@@ -85,7 +84,8 @@ class Casim():
         Returns:
             str (or list): image share url (or list of share urls)
         """
-        r = self.session.get(Casim._url_casi_share.format(self.image_id))
+        params = {"img": self.image_id}
+        r = self.session.get(Casim._url_casi_share, params=params)
         logger.info('get() on share page returns code : %d', r.status_code)
 
         return get_share(r.text, index) if index else get_all_shares(r.text)

@@ -68,9 +68,9 @@ def mock_session(monkeypatch, response, response2, response3, response4):
         url = args[1]
         if url == Casim._url:
             return MockResponse("", 200)
-        elif "https://www.casimages.com/ajax/s_ano_resize.php" in url:
+        elif Casim._url_resize in url:
             return MockResponse("", 200)
-        elif url == Casim._url_casi_share.format(image_id):
+        elif Casim._url_casi_share in url:
             return MockResponse(response, 200)
         elif CasimLogged._url_casi_share in url:
             return MockResponse(response3, 200)
