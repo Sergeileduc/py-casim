@@ -68,6 +68,17 @@ https://nsa40.casimages.com/img/xxxxxxxxxxxxxxx.png
 *   upload image and get his url
 *   python package (import) OR command line tool
 
+## Dev
+There's an alternative to `make` called `invoke` (Makefile equivalent is tasks.py)
+`pip install invoke`
+
+```shell
+inv test
+inv lint
+inv coverage
+inv --list
+```
+
 ### Credits
 
 This package was created with Cookiecutter and the `audreyr/cookiecutter-pypackage` project template.
