@@ -109,3 +109,5 @@ ENV/
 
 # Tests stuffs
 /*.jpg
+/*.html
+foo.py
