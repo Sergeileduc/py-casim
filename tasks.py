@@ -136,4 +136,5 @@ def release(c, version="patch"):
     c.run(f"bump2version {version}")
     c.run("git push")
     c.run("git push --tags")
-    c.run("twine upload --config-file .pypirc dist/*")
+    # c.run("twine upload --config-file .pypirc dist/*")
+    c.run("twine upload dist/*")
