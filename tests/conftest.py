@@ -7,6 +7,8 @@ from requests import Session
 
 from py_casim.casim import Casim, CasimLogged
 
+#pylint: disable=protected-access
+
 
 @pytest.fixture
 def mini_bbcode():
@@ -30,7 +32,7 @@ def response():
 def response2():
     """Read html sample from resp.html file. (for CasimLoggedin)"""
     path = Path("tests/test_tools/response_loggedin_search.html")
-    content = path.read_text()
+    content = path.read_text(encoding="utf-8")
     return content
 
 
@@ -38,7 +40,7 @@ def response2():
 def response3():
     """Read html sample from resp.html file. (for CasimLoggedin)"""
     path = Path("tests/test_tools/resp_share_loggedin.html")
-    content = path.read_text()
+    content = path.read_text(encoding="utf-8")
     return content
 
 
@@ -46,7 +48,7 @@ def response3():
 def response4():
     """Read html sample from resp.html file. (for CasimLoggedin)"""
     path = Path("tests/test_tools/resp_folders.html")
-    content = path.read_text()
+    content = path.read_text(encoding="utf-8")
     return content
 
 

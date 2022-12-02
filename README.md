@@ -5,8 +5,7 @@
 [![Build Status](https://travis-ci.org/Sergeileduc/py-casim.svg?branch=master)](https://travis-ci.org/Sergeileduc/py-casim)
 [![Documentation Status](https://readthedocs.org/projects/py-casim/badge/?version=latest)](https://py-casim.readthedocs.io/en/latest/?badge=latest)
 [![codecov](https://codecov.io/gh/Sergeileduc/py-casim/branch/master/graph/badge.svg)](https://codecov.io/gh/Sergeileduc/py-casim)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/dc2020cf808b4af2b40c592e8b0cec5d)](https://www.codacy.com/manual/sergei.leduc/py-casim?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Sergeileduc/py-casim&amp;utm_campaign=Badge_Grade)
-[![Requirements Status](https://requires.io/github/Sergeileduc/py-casim/requirements.svg?branch=master)](https://requires.io/github/Sergeileduc/py-casim/requirements/?branch=master)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b920474aee1b4a05bfa030606f1e1aef)](https://www.codacy.com/gh/Sergeileduc/py-casim/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Sergeileduc/py-casim&amp;utm_campaign=Badge_Grade)
 
 Python package and cli to upload image on Casimages.
 
