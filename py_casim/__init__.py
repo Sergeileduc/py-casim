@@ -2,7 +2,7 @@
 
 __author__ = """Sergeileduc"""
 __email__ = 'sergei.leduc@gmail.com'
-__version__ = '2.0.2'
+__version__ = '2.0.3'
 
 from .casim import Casim, CasimLogged
 
